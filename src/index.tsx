@@ -1,12 +1,22 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom/client';
-import { StyledEngineProvider } from '@mui/material/styles';
-import Demo from './Demo';
+import * as React from 'react'
+import * as ReactDOM from 'react-dom/client'
+import { StyledEngineProvider, createTheme } from '@mui/material/styles'
+import { CssBaseline, ThemeProvider } from '@mui/material'
+import Demo from './Demo'
 
-ReactDOM.createRoot(document.querySelector("#root")!).render(
+const theme = createTheme({
+  typography: {
+    fontFamily: 'Lato',
+  },
+})
+
+ReactDOM.createRoot(document.querySelector('#root')!).render(
   <React.StrictMode>
     <StyledEngineProvider injectFirst>
-      <Demo />
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Demo />
+      </ThemeProvider>
     </StyledEngineProvider>
   </React.StrictMode>
-);
+)
