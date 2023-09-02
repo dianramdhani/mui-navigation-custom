@@ -1,13 +1,11 @@
 # mui-navigation-custom
 
-![Logo Proyek](link_gambar_logo.png)
-
 Navigasi menu iseng-iseng. Mohon izin untuk yang punya desain 🙏 🙏
 
 ## Screenshot
 
-![Figma](images/figma.png)
-![Project](images/project.png)
+![Figma](screenshot/figma.png)
+![Project](screenshot/project.png)
 
 ## Link
 
